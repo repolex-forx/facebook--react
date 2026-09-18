@@ -1,0 +1,24 @@
+[2026-09-17T22:59:58Z] === ENRICH ITERATION 1 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-17T22:59:58Z] [iter=1] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-17T23:01:12Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=85 MB
+[2026-09-17T23:04:45Z] [iter=1] AST store loaded triples=17808339 load_secs=206 mem_mb=1146 MB
+[2026-09-17T23:04:45Z] [iter=1] Step 2: Finding LSP targets mem_mb=1146 MB
+[2026-09-17T23:05:07Z] [iter=1] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=21
+[2026-09-17T23:05:13Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1146 MB
+[2026-09-17T23:07:10Z] [iter=1] Position index built positions=1221129 nodes_with_types=1421260 secs=117 mem_mb=2769 MB
+[2026-09-17T23:07:10Z] [iter=1] Step 3: Starting LSP resolution mem_mb=2769 MB already_completed_types=[] already_completed_files=0
+[2026-09-17T23:07:10Z] [iter=1] Resolving target type target_type=call_site count=154875
+[2026-09-17T23:07:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.2 files_done=0 resolved=0 errors=0 current=packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/index.js
+[2026-09-18T00:28:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.1 files_done=2 resolved=109 errors=626 current=fixtures/dom/src/components/fixtures/error-handling/index.js
+[2026-09-18T01:18:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.9 files_done=4 resolved=121 errors=1022 current=packages/react-dom/src/events/__tests__/DOMPluginEventSystem-test.internal.js
+[2026-09-18T02:03:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=183.2 files_done=5 resolved=246 errors=1367 current=packages/dom-event-testing-library/__tests__/index-test.internal.js
+[2026-09-18T02:07:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=187.3 files_done=6 resolved=248 errors=1399 current=fixtures/legacy-jsx-runtimes/react-14/cjs/react-jsx-runtime.development.js
+[2026-09-18T02:17:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=197.3 files_done=7 resolved=271 errors=1476 current=packages/react-refresh/src/__tests__/ReactFresh-test.js
+[2026-09-18T02:32:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.0 files_done=8 resolved=289 errors=1591 current=packages/react/src/__tests__/forwardRef-test.js
+[2026-09-18T02:44:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.3 files_done=11 resolved=338 errors=1686 current=packages/react-native-renderer/src/__tests__/ReactNativeMount-test.internal.js
+[2026-09-18T02:48:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.5 files_done=12 resolved=338 errors=1719 current=packages/react-dom/src/__tests__/ReactDOMLegacyFiber-test.js
+[2026-09-18T02:54:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=234.6 files_done=13 resolved=379 errors=1766 current=packages/react-reconciler/src/ReactProfilerTimer.js
+[2026-09-18T03:00:38Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.7 files_completed=13 new_files_this_iter=13 mem_mb=2796 MB
+[2026-09-18T03:00:38Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=17308
+[2026-09-18T03:00:38Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-09-18T03:00:38Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14440 elapsed_min=240.7 files_completed=13
