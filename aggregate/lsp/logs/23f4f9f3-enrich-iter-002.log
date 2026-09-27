@@ -1,0 +1,33 @@
+[2026-09-27T19:05:50Z] === ENRICH ITERATION 2 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-27T19:05:50Z] [iter=2] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-27T19:06:43Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=85 MB
+[2026-09-27T19:10:13Z] [iter=2] AST store loaded triples=17808339 load_secs=202 mem_mb=1157 MB
+[2026-09-27T19:10:13Z] [iter=2] Step 2: Finding LSP targets mem_mb=1157 MB
+[2026-09-27T19:10:34Z] [iter=2] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=21
+[2026-09-27T19:10:35Z] [iter=2] Loaded checkpoint partial graph triples=17308
+[2026-09-27T19:10:41Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1157 MB
+[2026-09-27T19:12:38Z] [iter=2] Position index built positions=1221129 nodes_with_types=1421260 secs=117 mem_mb=2917 MB
+[2026-09-27T19:12:38Z] [iter=2] Step 3: Starting LSP resolution mem_mb=2917 MB already_completed_types=[] already_completed_files=13
+[2026-09-27T19:12:38Z] [iter=2] Resolving target type target_type=call_site count=154875
+[2026-09-27T19:12:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=0 resolved=0 errors=0 current=packages/react-reconciler/src/ReactProfilerTimer.js
+[2026-09-27T19:21:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=1 resolved=0 errors=69 current=packages/react-reconciler/src/ReactChildFiber.js
+[2026-09-27T19:52:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=2 resolved=54 errors=319 current=scripts/bench/benchmarks/pe-functional-components/benchmark.js
+[2026-09-27T20:17:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=71.7 files_done=4 resolved=1146 errors=515 current=packages/react-dom/src/__tests__/ReactTreeTraversal-test.js
+[2026-09-27T20:20:37Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=74.8 files_done=5 resolved=1219 errors=540 current=packages/react-dom/src/__tests__/ReactDOMComponentTree-test.js
+[2026-09-27T20:21:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=75.7 files_done=6 resolved=1255 errors=547 current=scripts/bench/benchmarks/pe-class-components/benchmark.js
+[2026-09-27T20:23:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.8 files_done=8 resolved=2835 errors=563 current=packages/react-native-renderer/src/ReactFiberConfigFabric.js
+[2026-09-27T20:29:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=83.5 files_done=9 resolved=2845 errors=609 current=packages/shared/ReactPerformanceTrackProperties.js
+[2026-09-27T20:31:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=85.7 files_done=10 resolved=2876 errors=626 current=packages/react-refresh/src/ReactFreshBabelPlugin.js
+[2026-09-27T20:34:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=88.8 files_done=11 resolved=2907 errors=651 current=fixtures/legacy-jsx-runtimes/lint-runtimes.js
+[2026-09-27T20:35:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=89.6 files_done=12 resolved=2915 errors=657 current=fixtures/legacy-jsx-runtimes/react-17/cjs/react-jsx-dev-runtime.development.js
+[2026-09-27T20:48:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=103.1 files_done=13 resolved=2949 errors=765 current=packages/react/src/__tests__/ReactStrictMode-test.js
+[2026-09-27T20:55:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=14 resolved=3170 errors=821 current=packages/react-devtools-shared/src/backend/legacy/renderer.js
+[2026-09-27T21:11:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=125.5 files_done=15 resolved=3241 errors=943 current=packages/react-dom/src/__tests__/ReactDOMForm-test.js
+[2026-09-27T21:19:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=133.8 files_done=16 resolved=3588 errors=1009 current=packages/react-dom/src/__tests__/ReactDOMFizzServer-test.js
+[2026-09-27T22:47:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=222.1 files_done=17 resolved=5009 errors=1707 current=packages/react-dom/src/events/__tests__/SyntheticKeyboardEvent-test.js
+[2026-09-27T22:50:38Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=224.8 files_done=18 resolved=5103 errors=1728 current=packages/react-dom/src/__tests__/ReactDOMFizzStatic-test.js
+[2026-09-27T22:51:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=225.4 files_done=19 resolved=5177 errors=1733 current=packages/react-reconciler/src/__tests__/ReactSuspenseEffectsSemantics-test.js
+[2026-09-27T23:05:52Z] [iter=2] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=32 new_files_this_iter=19 mem_mb=2917 MB
+[2026-09-27T23:05:52Z] [iter=2] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=71574
+[2026-09-27T23:05:53Z] [iter=2] Checkpoint written, exiting with code 7
+[2026-09-27T23:05:53Z] [iter=2] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.0 files_completed=32
