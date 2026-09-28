@@ -1,0 +1,37 @@
+[2026-09-28T07:05:41Z] === ENRICH ITERATION 3 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-28T07:05:41Z] [iter=3] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-28T07:07:01Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=86 MB
+[2026-09-28T07:10:35Z] [iter=3] AST store loaded triples=17808339 load_secs=208 mem_mb=1150 MB
+[2026-09-28T07:10:35Z] [iter=3] Step 2: Finding LSP targets mem_mb=1150 MB
+[2026-09-28T07:10:56Z] [iter=3] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=21
+[2026-09-28T07:10:59Z] [iter=3] Loaded checkpoint partial graph triples=71574
+[2026-09-28T07:11:05Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1150 MB
+[2026-09-28T07:12:55Z] [iter=3] Position index built positions=1221129 nodes_with_types=1421260 secs=110 mem_mb=2860 MB
+[2026-09-28T07:12:55Z] [iter=3] Step 3: Starting LSP resolution mem_mb=2860 MB already_completed_types=[] already_completed_files=32
+[2026-09-28T07:12:55Z] [iter=3] Resolving target type target_type=call_site count=154875
+[2026-09-28T07:12:57Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=0 resolved=0 errors=0 current=packages/react-reconciler/src/__tests__/ReactSuspenseEffectsSemantics-test.js
+[2026-09-28T07:33:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=28.2 files_done=1 resolved=7 errors=202 current=packages/react-reconciler/src/__tests__/ReactSuspenseEffectsSemanticsDOM-test.js
+[2026-09-28T07:39:31Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=33.8 files_done=2 resolved=14 errors=257 current=packages/react-cache/src/__tests__/ReactCacheOld-test.internal.js
+[2026-09-28T07:43:32Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=3 resolved=16 errors=296 current=packages/react-reconciler/src/__tests__/ReactDefaultTransitionIndicator-test.js
+[2026-09-28T07:50:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=45.2 files_done=4 resolved=20 errors=368 current=packages/react-dom-bindings/src/events/ReactDOMEventReplaying.js
+[2026-09-28T07:56:36Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=50.9 files_done=5 resolved=48 errors=423 current=packages/react-dom/src/__tests__/ReactDOMFiberAsync-test.js
+[2026-09-28T08:04:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=59.0 files_done=6 resolved=86 errors=502 current=packages/react-devtools-shared/src/hooks/__tests__/__source__/__compiled__/inline/react-sources-extended/index-map/ToDoList.js
+[2026-09-28T08:05:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=60.2 files_done=7 resolved=93 errors=513 current=packages/react-reconciler/src/__tests__/ReactIncrementalUpdates-test.js
+[2026-09-28T08:13:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=68.1 files_done=8 resolved=99 errors=590 current=packages/react-dom/src/__tests__/ReactServerRendering-test.js
+[2026-09-28T08:15:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=69.9 files_done=9 resolved=120 errors=608 current=packages/react-dom/src/__tests__/ReactDOMUseId-test.js
+[2026-09-28T08:21:36Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=75.9 files_done=10 resolved=126 errors=666 current=packages/react-dom/src/__tests__/ReactMultiChildReconcile-test.js
+[2026-09-28T08:26:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=81.1 files_done=11 resolved=142 errors=716 current=packages/react-client/src/__tests__/ReactFlight-test.js
+[2026-09-28T08:41:50Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=96.1 files_done=12 resolved=205 errors=862 current=packages/react-devtools-shell/src/app/InlineWarnings/index.js
+[2026-09-28T08:43:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=97.6 files_done=13 resolved=236 errors=876 current=packages/react-devtools-shared/src/__tests__/inspectedElement-test.js
+[2026-09-28T08:57:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=112.0 files_done=14 resolved=292 errors=1016 current=scripts/bench/benchmarks/pe-no-components/benchmark.js
+[2026-09-28T09:48:59Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=163.3 files_done=15 resolved=293 errors=1514 current=packages/react-server/src/ReactFizzClassComponent.js
+[2026-09-28T09:52:48Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=167.1 files_done=16 resolved=332 errors=1551 current=packages/react-server-dom-esm/src/client/ReactFlightDOMClientBrowser.js
+[2026-09-28T09:55:17Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=169.6 files_done=17 resolved=344 errors=1575 current=packages/react-dom/src/__tests__/ReactDOMComponent-test.js
+[2026-09-28T09:57:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=172.2 files_done=18 resolved=520 errors=1600 current=fixtures/legacy-jsx-runtimes/react-15/react-15.test.js
+[2026-09-28T09:59:56Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=174.2 files_done=19 resolved=533 errors=1620 current=packages/react-server-dom-webpack/src/__tests__/ReactFlightDOMBrowser-test.js
+[2026-09-28T10:24:22Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=198.7 files_done=20 resolved=611 errors=1857 current=packages/react-reconciler/src/ReactFiberBeginWork.js
+[2026-09-28T11:05:09Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=239.5 files_done=21 resolved=663 errors=2253 current=packages/react-dom/src/__tests__/ReactDOMServerIntegrationTextarea-test.js
+[2026-09-28T11:05:53Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=53 new_files_this_iter=21 mem_mb=2860 MB
+[2026-09-28T11:05:53Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=92736
+[2026-09-28T11:05:54Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-09-28T11:05:54Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14411 elapsed_min=240.2 files_completed=53
