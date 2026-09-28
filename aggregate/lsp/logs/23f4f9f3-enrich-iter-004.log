@@ -1,0 +1,20 @@
+[2026-09-28T19:12:23Z] === ENRICH ITERATION 4 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-28T19:12:23Z] [iter=4] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-28T19:13:30Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=85 MB
+[2026-09-28T19:17:12Z] [iter=4] AST store loaded triples=17808339 load_secs=213 mem_mb=1155 MB
+[2026-09-28T19:17:12Z] [iter=4] Step 2: Finding LSP targets mem_mb=1155 MB
+[2026-09-28T19:17:36Z] [iter=4] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=25
+[2026-09-28T19:17:40Z] [iter=4] Loaded checkpoint partial graph triples=92736
+[2026-09-28T19:17:47Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1155 MB
+[2026-09-28T19:19:49Z] [iter=4] Position index built positions=1221129 nodes_with_types=1421260 secs=122 mem_mb=3146 MB
+[2026-09-28T19:19:49Z] [iter=4] Step 3: Starting LSP resolution mem_mb=3146 MB already_completed_types=[] already_completed_files=53
+[2026-09-28T19:19:49Z] [iter=4] Resolving target type target_type=call_site count=154875
+[2026-09-28T19:19:52Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=0 resolved=0 errors=0 current=packages/react-dom/src/__tests__/ReactDOMServerIntegrationTextarea-test.js
+[2026-09-28T19:22:11Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=9.8 files_done=1 resolved=0 errors=18 current=packages/react-reconciler/src/ReactFiberCommitWork.js
+[2026-09-28T20:32:47Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=80.4 files_done=2 resolved=30 errors=567 current=packages/react-devtools-inline/webpack.config.js
+[2026-09-28T20:40:30Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=88.1 files_done=4 resolved=31 errors=627 current=packages/react-server/src/ReactFlightServer.js
+[2026-09-28T22:03:38Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=171.3 files_done=5 resolved=366 errors=1274 current=packages/react-reconciler/src/__tests__/ReactHooksWithNoopRenderer-test.js
+[2026-09-28T23:12:26Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=58 new_files_this_iter=5 mem_mb=3165 MB
+[2026-09-28T23:12:26Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=105364
+[2026-09-28T23:12:27Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-09-28T23:12:27Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.1 files_completed=58
