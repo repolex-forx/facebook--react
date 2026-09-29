@@ -1,0 +1,28 @@
+[2026-09-29T07:12:35Z] === ENRICH ITERATION 6 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-29T07:12:35Z] [iter=6] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-29T07:13:52Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=85 MB
+[2026-09-29T07:17:34Z] [iter=6] AST store loaded triples=17808339 load_secs=214 mem_mb=1161 MB
+[2026-09-29T07:17:34Z] [iter=6] Step 2: Finding LSP targets mem_mb=1161 MB
+[2026-09-29T07:17:58Z] [iter=6] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=24
+[2026-09-29T07:18:04Z] [iter=6] Loaded checkpoint partial graph triples=120293
+[2026-09-29T07:18:11Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1161 MB
+[2026-09-29T07:20:21Z] [iter=6] Position index built positions=1221129 nodes_with_types=1421260 secs=130 mem_mb=3175 MB
+[2026-09-29T07:20:21Z] [iter=6] Step 3: Starting LSP resolution mem_mb=3175 MB already_completed_types=[] already_completed_files=69
+[2026-09-29T07:20:21Z] [iter=6] Resolving target type target_type=call_site count=154875
+[2026-09-29T07:20:25Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=7.8 files_done=0 resolved=0 errors=0 current=packages/react-server-dom-webpack/src/__tests__/ReactFlightDOM-test.js
+[2026-09-29T07:57:01Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=44.4 files_done=1 resolved=48 errors=285 current=scripts/jest/typescript/preprocessor.js
+[2026-09-29T08:14:26Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=61.8 files_done=3 resolved=91 errors=421 current=packages/react-devtools-shared/src/devtools/views/Components/TreeContext.js
+[2026-09-29T08:22:25Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=69.8 files_done=4 resolved=118 errors=483 current=packages/react-refresh/src/__tests__/ReactFreshIntegration-test.js
+[2026-09-29T08:40:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=88.0 files_done=5 resolved=122 errors=623 current=packages/react-dom/src/__tests__/ReactDOMServerIntegrationHooks-test.js
+[2026-09-29T09:01:49Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=109.2 files_done=6 resolved=124 errors=788 current=packages/internal-test-utils/__tests__/ReactInternalTestUtils-test.js
+[2026-09-29T09:41:08Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=148.5 files_done=7 resolved=345 errors=1092 current=packages/react-dom/src/__tests__/ReactDOMFizzSuppressHydrationWarning-test.js
+[2026-09-29T09:47:46Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=155.2 files_done=8 resolved=351 errors=1143 current=packages/react-dom/src/__tests__/ReactDOMSVG-test.js
+[2026-09-29T09:48:25Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=155.8 files_done=9 resolved=367 errors=1148 current=fixtures/legacy-jsx-runtimes/react-15/cjs/react-jsx-runtime.development.js
+[2026-09-29T09:58:21Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=165.8 files_done=10 resolved=390 errors=1225 current=scripts/flow/runFlow.js
+[2026-09-29T10:17:56Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=185.4 files_done=12 resolved=445 errors=1376 current=packages/react-devtools-extensions/src/__tests__/ignoreList-test.js
+[2026-09-29T10:18:35Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=186.0 files_done=13 resolved=447 errors=1381 current=packages/react-reconciler/src/__tests__/Activity-test.js
+[2026-09-29T10:41:18Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=208.7 files_done=14 resolved=447 errors=1557 current=fixtures/dom/src/components/fixtures/range-inputs/index.js
+[2026-09-29T11:12:54Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=240.3 files_completed=84 new_files_this_iter=15 mem_mb=3195 MB
+[2026-09-29T11:12:54Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=133926
+[2026-09-29T11:12:55Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-09-29T11:12:55Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=14419 elapsed_min=240.3 files_completed=84
