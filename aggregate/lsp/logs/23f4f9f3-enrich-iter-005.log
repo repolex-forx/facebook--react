@@ -1,0 +1,27 @@
+[2026-09-28T23:18:50Z] === ENRICH ITERATION 5 START | repo=facebook/react sha=23f4f9f3 ===
+[2026-09-28T23:18:50Z] [iter=5] PHASE START: enrich repo=facebook/react sha=23f4f9f3 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/23f4f9f3-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz
+[2026-09-28T23:20:07Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=86 MB
+[2026-09-28T23:25:35Z] [iter=5] AST store loaded triples=17808339 load_secs=322 mem_mb=1151 MB
+[2026-09-28T23:25:35Z] [iter=5] Step 2: Finding LSP targets mem_mb=1151 MB
+[2026-09-28T23:25:53Z] [iter=5] LSP targets found call_sites=154875 imports=0 extends=146 implements=1 secs=17
+[2026-09-28T23:25:56Z] [iter=5] Loaded checkpoint partial graph triples=105364
+[2026-09-28T23:26:02Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1151 MB
+[2026-09-28T23:27:28Z] [iter=5] Position index built positions=1221129 nodes_with_types=1421260 secs=86 mem_mb=2940 MB
+[2026-09-28T23:27:28Z] [iter=5] Step 3: Starting LSP resolution mem_mb=2940 MB already_completed_types=[] already_completed_files=58
+[2026-09-28T23:27:28Z] [iter=5] Resolving target type target_type=call_site count=154875
+[2026-09-28T23:27:30Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=0 resolved=0 errors=0 current=packages/react-reconciler/src/__tests__/ReactHooksWithNoopRenderer-test.js
+[2026-09-29T00:43:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=84.8 files_done=1 resolved=1 errors=729 current=packages/react-dom/src/__tests__/DOMPropertyOperations-test.js
+[2026-09-29T00:48:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=89.6 files_done=2 resolved=217 errors=775 current=packages/react-devtools-shared/src/__tests__/utils-test.js
+[2026-09-29T00:57:14Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=98.4 files_done=3 resolved=225 errors=859 current=packages/react-devtools-shared/src/__tests__/storeStressTestConcurrent-test.js
+[2026-09-29T01:14:06Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=115.3 files_done=4 resolved=247 errors=1021 current=packages/react-server-dom-webpack/src/ReactFlightWebpackPlugin.js
+[2026-09-29T01:15:59Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=117.1 files_done=5 resolved=257 errors=1039 current=packages/react-reconciler/src/__tests__/ReactSuspenseWithNoopRenderer-test.js
+[2026-09-29T01:54:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=155.8 files_done=6 resolved=269 errors=1409 current=packages/react-reconciler/src/__tests__/ReactHooks-test.internal.js
+[2026-09-29T02:30:32Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=191.7 files_done=7 resolved=284 errors=1753 current=packages/react/src/__tests__/createReactClassIntegration-test.js
+[2026-09-29T02:38:21Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=199.5 files_done=8 resolved=316 errors=1828 current=packages/react-reconciler/src/__tests__/ReactFragment-test.js
+[2026-09-29T02:45:21Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=206.5 files_done=9 resolved=336 errors=1895 current=packages/react-dom/src/__tests__/ReactUpdates-test.js
+[2026-09-29T03:02:03Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=223.2 files_done=10 resolved=408 errors=2055 current=packages/react-dom/src/__tests__/ReactLegacyErrorBoundaries-test.internal.js
+[2026-09-29T03:03:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=225.1 files_done=11 resolved=464 errors=2073 current=packages/react-server-dom-webpack/src/__tests__/ReactFlightDOM-test.js
+[2026-09-29T03:19:07Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=240.3 files_completed=69 new_files_this_iter=11 mem_mb=2968 MB
+[2026-09-29T03:19:07Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/23f4f9f30da9e9af2108c18bb197bae75ab584ea.nq.gz triples=120293
+[2026-09-29T03:19:08Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-09-29T03:19:08Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14417 elapsed_min=240.3 files_completed=69
